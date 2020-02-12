@@ -1,0 +1,66 @@
+/*1. Lớp 17CNTN thuộc niên khoá 2018 đúng không? */
+?- schoolyear('2018, '17CNTN').
+
+/*2. Lớp 17CSH1 thuộc niên khoá 2017 đúng không? */
+?- schoolyear('2017', '17CSH1').
+
+/*3. Các lớp nào thuộc niên khoá 2016? */
+?- schoolyear('2016', X).
+
+/*4. Lớp 17CNTN thuộc khoa gì? */
+?- faculty(X, '17CNTN').
+
+/*5. Các lớp nào thuộc khoa Công nghệ sinh học?*/
+?- faculty('Biotechnology', X).
+
+/*6. Hai lớp 17CNTN và 18CNTN thuộc cùng một khoa đúng không? */
+?- sameFacultyClass('17CNTN', '18CNTN').
+
+/*7. Hai lớp 17CNTN và 18CSH1 thuộc cùng một khoa đúng không? */
+?- sameFacultyClass('17CNTN', 18CSH1').
+
+/*8. Các lớp nào thuộc cùng khoa với lớp 17HOH1?*/
+?- sameFacultyClass(X, '17HOH1').
+
+/*9. Sinh viên 1712001 học ngành gì?*/
+?- facultyOfStudent(X, '1712001').
+
+/*10. Sinh viên 1718001 học ngành Infomation Technology đúng không?*/
+?- facultyOfStudent('Infomation Technology', '1718001').
+
+/*11. Tất cả sinh viên học ngành Infomation Technology là? */
+?- facultyOfStudent('Infomation Technology', X).
+
+/*12. Lớp của 1712005 là lớp nào? */
+?- class(X, '1712005').
+
+/*13. Tất cả sinh viên của lớp 18CSH1 là?*/
+?- class('18CSH1', X).
+hoặc ?- student(X, '18CSH1').
+
+/*14. 1712001 và 1718001 là bạn cùng khoá phải không? */
+?- friend('1712001', '1718001').
+
+/*15. Những ai là bạn cùng khoá của 1812001? */
+?- friend(X, '1812001').
+
+/*16. Những ai là bạn cùng lớp của 1712001? */
+?- classmate(X, '1712001').
+
+/*17. 1712001 và 1712003 là bạn cùng lớp phải không? */
+?- classmate('1712001', '1712003').
+
+/*18. 1712001 và 1718001 là hai sinh viên cùng khoá nhưng khác lớp phải không? */
+?- diffirentClassFriend('1712001', '1718001').
+
+/*19. Liệt kê tất cả sinh viên cùng khoá nhưng khác lớp của 1612003? */
+?- diffirentClassFriend(X, '1612003').
+
+/*20. Những sinh viên khác khoá với 1712001? */
+?- diffirentYearFriend(X, '1712001').
+
+/*21. Sinh viên 1712001 và 1612001 là hai sinh viên khác khoá phải không? */
+?- diffirentYearFriend('1712001', '1612001').
+
+/*22. Những ai là bạn cùng khoa Biotechnology với 1618001? */
+?- sameFacultyFriend(X, '1618001').

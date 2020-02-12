@@ -1,0 +1,59 @@
+/*1. Ai là mẹ của Prince Andrew? */
+?- mother(X, 'Prince Andrew').
+
+/*2. Nữ hoàng Elizabeth có phải vợ của Mia Grace Tindall không? */
+?- wife('Queen Elizabeth II', 'Mia Grace Tindall').
+
+/*3. Những ai là cháu của nữ hoàng Elizabeth? */
+?- grandchild(X, 'Queen Elizabeth II').
+
+/*4. Những ai là chú (bác/cậu) của Lady Louise Windsor? */
+?- uncle(X, 'Lady Louise Windsor').
+
+/*5. Những ai là cháu trai (grandson) của hoàng tử Charles? */
+?- grandson(X, 'Prince Charles').
+
+/*6. Ai là con của Kate Middleson?*/
+?- child(X, 'Kate Middleson').
+
+/*7. Ai là anh chị em của Prince Charles? */
+?- sibling(X, 'Prince Charles').
+
+/*8. Ai là chồng của công chúa Anne? */
+?- husband(X, 'Princess Anne').
+
+/*9. Có phải Princess Anne và Timothy Laurence đã li dị không? */
+?- divorced('Princess Anne', 'Timothy Laurence').
+
+/*10. Ai đã li dị với Princess Anne? */
+?- divorced(X, 'Princess Anne').
+
+/*11. Ai là cha mẹ của Lady Louise Windsor? */
+?- parent(X, 'Lady Louise Windsor').
+
+/*12. Lady Louise Windsor có phải là chị của James không? */
+?- sister('Lady Louise Windsor', 'James').
+
+/*13. Cháu gái (granddaughter) của nữ hoàng Elizabeth là ai? */
+?- granddaughter(X, 'Queen Elizabeth II').
+
+/*14. Cháu gái (niece) của Meghan Markle là ai? */
+?- niece(X, 'Meghan Markle').
+
+/*15. Ai là cô dì của Price Louis?*/
+?- aunt(X, 'Prince Louis').
+
+/*16. Ai là cháu gái của Timothy Laurence? */
+?- niece(X, 'Timothy Laurence').
+
+/*17. Ai là cháu gái của Prince Charles? */
+?- niece(X, 'Prince Charles').
+
+/*18. Ai là cô của James? */
+?- aunt(X, 'James').
+
+/*19. Meghan Markle có phải là cô của công chúa Charlotte không? */
+?- aunt('Meghan Markle', 'Princess Charlotte').
+
+/*20. Princess Eugenie có phải anh trai của Princess Beatrice không? */
+?- brother('Princess Eugenie', 'Princess Beatrice').
